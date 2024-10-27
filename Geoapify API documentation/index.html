@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZone API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TimeZone API</h1>
+    <h2>Your Current Time Zone</h2>
+    <div id="timezone-info">
+        <p>Name Of Time Zone: <span id="name"></span></p>
+        <p>Lat: <span id="lat"></span> Long: <span id="long"></span></p>
+        <p>Offset STD: <span id="offset-std"></span></p>
+        <p>Offset STD Seconds: <span id="offset-std-seconds"></span></p>
+        <p>Offset DST: <span id="offset-dst"></span></p>
+        <p>Offset DST Seconds: <span id="offset-dst-seconds"></span></p>
+        <p>Country: <span id="country"></span></p>
+        <p>Postcode: <span id="postcode"></span></p>
+        <p>City: <span id="city"></span></p>
+    </div>
+
+    <h3>Enter Address</h3>
+    <input type="text" id="address" placeholder="Enter address">
+    <button onclick="fetchTimezoneByAddress()">Submit</button>
+    <p >Please enter an address!</p>
+
+    <h3>Your result</h3>
+    <div id="address-timezone">
+        <p>Name Of Time Zone: <span id="result-name"></span></p>
+        <p>Lat: <span id="result-lat"></span> Long: <span id="result-long"></span></p>
+        <p>Offset STD: <span id="result-offset-std"></span></p>
+        <p>Offset STD Seconds: <span id="result-offset-std-seconds"></span></p>
+        <p>Offset DST: <span id="result-offset-dst"></span></p>
+        <p>Offset DST Seconds: <span id="result-offset-dst-seconds"></span></p>
+        <p>Country: <span id="result-country"></span></p>
+        <p>Postcode: <span id="result-postcode"></span></p>
+        <p>City: <span id="result-city"></span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

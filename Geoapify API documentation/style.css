@@ -1,0 +1,47 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    margin: 20px 0 10px;
+}
+
+#timezone-info, #address-timezone {
+    background-color: #333;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+#error-message {
+    color: red;
+    display: none;
+}
+
+#address-timezone {
+    display: none;
+}
